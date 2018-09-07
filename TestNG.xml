@@ -1,0 +1,67 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Demo Suite">
+
+ 
+  <parameter name="selenium.browser" value="Chrome" />
+  <parameter name="selenium.url" value="https://www.Flipkart.com/" />
+ 
+
+
+<test name="Test home page">
+    <classes>
+      <class name="testCases.LaunchSite"/>
+      <class name="testCases.HomePage"/>
+      
+    </classes>
+  </test> 
+  
+<test name="Test Login">
+    <classes>
+      <class name="testCases.Login"/>     
+    </classes>
+  </test> 
+  
+<test name="Test Registration">
+    <classes>
+      <class name="testCases.Registration"/>     
+    </classes>
+  </test>
+  
+<test name="Test Search">
+    <classes>
+      <class name="testCases.Search"/>     
+    </classes>
+  </test> 
+  
+<test name="Test productdescription">
+    <classes>
+      <class name="testCases.ProductDescription"/>     
+    </classes>
+  </test> 
+  
+<test name="Test Addproduct">
+    <classes>
+      <class name="testCases.Addtocart"/>     
+    </classes>
+  </test> 
+  
+<test name="Test Remove from cart">
+    <classes>
+      <class name="testCases.Removefromcart"/>     
+    </classes>
+  </test> 
+  
+<test name="Test Logout">
+    <classes>
+      <class name="testCases.Logout"/>     
+    </classes>
+  </test>
+  
+  <test name="Test Registration Retry">
+    <classes>
+      <class name="testCases.Registration"/>     
+    </classes>
+  </test> 
+
+
+</suite> 
